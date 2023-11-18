@@ -1,0 +1,62 @@
+[!] Your file limit is very small, which negatively impacts RustScan's speed. Use the Docker image, or up the Ulimit with '--ulimit 5000'.
+Open 10.6.0.143:22
+Open 10.6.0.143:111
+Open 10.6.0.143:273
+Open 10.6.0.143:1883
+Open 10.6.0.143:8008
+Open 10.6.0.143:8010
+Open 10.6.0.143:8015
+Open 10.6.0.143:8020
+
+
+
+
+
+
+[~] Starting Script(s)
+[>] Running script "nmap -vvv -p {{port}} {{ip}} -sV -Pn" on ip 10.6.0.143
+Depending on the complexity of the script, results may take some time to appear.
+Host discovery disabled (-Pn). All addresses will be marked 'up' and scan times may be slower.
+[~] Starting Nmap 7.94 ( https://nmap.org ) at 2023-09-05 09:55 IST
+NSE: Loaded 46 scripts for scanning.
+Initiating Parallel DNS resolution of 1 host. at 09:55
+Stats: 0:00:00 elapsed; 0 hosts completed (0 up), 0 undergoing Host Discovery
+Parallel DNS resolution of 1 host. Timing: About 0.00% done
+Completed Parallel DNS resolution of 1 host. at 09:55, 0.01s elapsed
+DNS resolution of 1 IPs took 0.01s. Mode: Async [#: 2, OK: 0, NX: 1, DR: 0, SF: 0, TR: 1, CN: 0]
+Initiating Connect Scan at 09:55
+Scanning 10.6.0.143 [8 ports]
+Discovered open port 8008/tcp on 10.6.0.143
+Discovered open port 8010/tcp on 10.6.0.143
+Discovered open port 22/tcp on 10.6.0.143
+Discovered open port 1883/tcp on 10.6.0.143
+Discovered open port 111/tcp on 10.6.0.143
+Discovered open port 8015/tcp on 10.6.0.143
+Discovered open port 8020/tcp on 10.6.0.143
+Discovered open port 273/tcp on 10.6.0.143
+Completed Connect Scan at 09:55, 0.01s elapsed (8 total ports)
+Initiating Service scan at 09:55
+Scanning 8 services on 10.6.0.143
+Service scan Timing: About 50.00% done; ETC: 09:58 (0:01:38 remaining)
+Service scan Timing: About 75.00% done; ETC: 09:58 (0:00:45 remaining)
+Completed Service scan at 09:57, 138.80s elapsed (8 services on 1 host)
+NSE: Script scanning 10.6.0.143.
+NSE: Starting runlevel 1 (of 2) scan.
+Initiating NSE at 09:57
+Completed NSE at 09:57, 7.21s elapsed
+NSE: Starting runlevel 2 (of 2) scan.
+Initiating NSE at 09:57
+Completed NSE at 09:57, 1.01s elapsed
+Nmap scan report for 10.6.0.143
+Host is up, received user-set (0.0049s latency).
+Scanned at 2023-09-05 09:55:01 IST for 148s
+
+PORT     STATE SERVICE                  REASON  VERSION
+22/tcp   open  ssh                      syn-ack OpenSSH 7.6p1 Ubuntu 4ubuntu0.3 (Ubuntu Linux; protocol 2.0)
+111/tcp  open  rpcbind                  syn-ack 2-4 (RPC #100000)
+273/tcp  open  ssl/unknown              syn-ack
+1883/tcp open  mosquitto version 1.4.15 syn-ack
+8008/tcp open  http                     syn-ack
+8010/tcp open  ssl/xmpp?                syn-ack
+8015/tcp open  ssl/cfg-cloud?           syn-ack
+8020/tcp open  intu-ec-svcdisc?         syn-ack

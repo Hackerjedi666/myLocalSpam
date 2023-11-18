@@ -1,0 +1,4 @@
+Started SSH honeypot on port 22
+[INFO] Received connection from 192.168.64.10:38216
+[ERROR] EOFError: 
+Started SSH honeypot on port 22

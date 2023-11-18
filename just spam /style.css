@@ -1,0 +1,118 @@
+/* Reset some default styles */
+body, h1, h2, h3, p, ul, li, form {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f7f7f7; /* Light background color */
+}
+
+header {
+  background-color: #1a1a1a; /* Dark header background color */
+  color: #fff;
+  padding: 1rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center; /* Center the navigation items */
+}
+
+nav li {
+  margin-right: 1rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  transition: color 0.2s ease-in-out;
+  padding: 10px 15px; /* Add padding to make the links more clickable */
+}
+
+nav a:hover {
+  color: #e0e0e0;
+}
+
+#hero {
+  background-image: url('path-to-hero-image.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-align: center; /* Center text inside the hero section */
+}
+
+#hero h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+#hero p {
+  font-size: 20px;
+}
+
+section {
+  padding: 2rem;
+}
+
+h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+a.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #1a1a1a; /* Dark button background color */
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 18px;
+  transition: background-color 0.2s ease-in-out;
+}
+
+a.button:hover {
+  background-color: #333; /* Darker background color on hover */
+}
+
+form {
+  margin-top: 20px;
+}
+
+form label,
+form textarea,
+form input[type="text"],
+form input[type="email"],
+form button {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+form textarea {
+  height: 120px;
+}
+
+footer {
+  text-align: center;
+  background-color: #1a1a1a; /* Dark footer background color */
+  color: #fff;
+  padding: 1rem;
+}
+
+/* Add more CSS styles specific to your website's theme here */
